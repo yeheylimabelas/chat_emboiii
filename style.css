@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.chat-input-container {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  align-items: center;
+}
+.hariIni {
+  max-width: 19%;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #212e36;
+  color: #85929b;
+  text-align: center;
+  margin: auto;
+  font-size: small;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.pesan_hehe {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #212e36;
+  color: #cec193;
+  text-align: center;
+  margin: auto;
+  font-size: small;
+}
+.sent {
+  background-color: #005d4b;
+  text-align: right;
+  float: right;
+  clear: both;
+}
+.received {
+  background-color: #212e36;
+  float: left;
+  clear: both;
+}
+.send-button {
+  background-color: #22c062;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+.material-icons {
+  font-size: 20px;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .message {
+    max-width: 80%;
+  }
+  .chat-input-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .brand-name {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .hariIni {
+    max-width: 19%;
+  }
+  .brand-name {
+    display: flex;
+    align-items: center;
+  }
+}
+.wallpaper {
+  background-image: url("https://i.pinimg.com/564x/e6/29/25/e62925d2af795db245dffbc42e05296b.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.modal-content {
+  background-image: url("https://i.pinimg.com/564x/1f/b3/41/1fb3417c7c4e9fea0843b83b641d0e53.jpg");
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-header .btn-close {
+  color: white;
+  opacity: 1;
+  filter: invert(1);
+}
+.modal-body {
+  opacity: 0.9;
+}
+.chat-input {
+  width: 100%;
+  padding-left: 40px;
+  background-color: #212e36;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.yoi1 {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #8997a0;
+}
+.brand-name {
+  display: flex;
+  align-items: center;
+}
+.message {
+  max-width: calc(100% - 60px);
+  padding: 10px;
+  padding-right: 50px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.message-time {
+  font-size: 11px;
+  color: #85929b;
+  position: absolute;
+  bottom: 15%;
+  right: 10px;
+}
