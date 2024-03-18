@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+  window.onload = function () {
+    if (!sessionStorage.getItem("firstLoad")) {
+      sessionStorage.setItem("firstLoad", true);
+      window.location.reload();
+    } else {
+      sessionStorage.removeItem("firstLoad");
+    }
+  };
+
   // Mendefinisikan elemen audio
   const soundDatang = document.getElementById("audio2");
   const soundKirim = document.getElementById("audio3");
